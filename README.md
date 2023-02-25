@@ -10,7 +10,7 @@ The service is designed to transfer money between accounts. Few lines for the se
 
 # Get Started
 ##### Clone
-- git clone https://github.com/sudhanshu-gupta/money-transfer.git && cd money-transfer
+- git clone 
 ##### Testing
   - To run tests, run the following script: `./test.sh` or `sh test.sh`. In case of failure, please try running test again or reach out to me.
   - It will run the integration tests and unit tests. Test results along with test case can be viewed by opening the `target/site/surefire-report.html` in the web browser.
@@ -34,7 +34,7 @@ Api can also be accessed from swagger endpoint http://localhost:8082/swagger-ui/
 #### Create Account
 Create new account for a given user with email. Account with same email should not exist before.
 ```sh
-curl -X POST "http://localhost:8082/account" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"balance\":10,\"email\":\"sudhanshu@gmail.com\",\"name\":\"sudhanshu gupta\"}"
+curl -X POST "http://localhost:8082/account" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"balance\":10,\"email\":\"mfmalik90@gmail.com\",\"name\":\"Faizan Malik\"}"
 ```
 #### Get Account Balance
 Get the current balance of an existing account. If account doesnot exist, it throws error.
@@ -48,4 +48,3 @@ curl -X POST "http://localhost:8082/account/transfer" -H "accept: application/js
 ```
 
 * For docker based datastore, checkout the `dev` branch.
-* In case of more information/help reach out at sudhanshu97gupta@gmail.com
